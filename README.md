@@ -6,13 +6,12 @@ The goal of this project is to analyze the relationship between player character
 
 ## Question
 
-**Can play experience, hours logged, and gender predict the likelihood of subscribing to a Minecraft newsletter?**
+**How does player experience, hours logged on the game, and age predict the liklihood of being subscribed to the newsletter**
 
 This question is motivated by the need to identify which types of players are most engaged with the server and community, as indicated by their choice to opt into further communication via the newsletter. The response variable of interest is `newsletter subscription status` (yes or no), and the explanatory variables are:
-
-- `play experience` (e.g., beginner, experienced)
 - `hours logged` (total time spent playing)
-- `gender` (as recorded during signup)
+- `age` (as recorded during signup)
+I will be blocking classification by player experience, one being expert (containing "Veteran" and "Pro" players), and the other being new players ("Beginner", "Amateur", and "Regular" players)
 
 ## Project Plan
 
@@ -25,12 +24,11 @@ To answer this question, I will follow the data science workflow outlined below:
 
 2. **Exploratory Data Analysis (EDA)**
    - Generate summary statistics for key variables
-   - Visualize distributions and relationships (e.g., bar plots, boxplots)
+   - Visualize distributions and relationships
 
 3. **Modeling**
-   - Use logistic regression to model the probability of newsletter subscription
+   - Use knn classification to see which group has a higher chance of being predicted as a news letter subscriber
    - Evaluate model accuracy and interpret coefficients
-   - Consider including alternative models if time permits
 
 4. **Results and Interpretation**
    - Present key findings with plots and tables
