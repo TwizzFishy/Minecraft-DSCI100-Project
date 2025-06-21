@@ -66,8 +66,11 @@ I filtered for Male, Female, and Non-binary genders. I then classified players i
 
 Scatter plots were used to visualize the relationship between age, play hours, and subscription status by player type:
 
-**Figure 1.** Pro Player: Subscription Status by Age and Play Hours  
-**Figure 2.** New Player: Subscription Status by Age and Play Hours  
+**Figure 1.** Subscription Status by Age and Play Hours  
+![Alt text](played_hours_vs_age.svg)
+
+ **Figure 2.** Ideal 
+
 
 ```r
 ggplot(...geom_point(alpha = 0.5)...)
