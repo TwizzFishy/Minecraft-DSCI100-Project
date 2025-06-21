@@ -22,7 +22,6 @@ To answer this question, I will follow the data science workflow outlined below:
    - Load `players.csv` and `sessions.csv`
    - Merge datasets on a common key (e.g., player ID)
    - Clean data: handle missing values, check data types, remove duplicates
-   - Create new features (e.g., total hours played)
 
 2. **Exploratory Data Analysis (EDA)**
    - Generate summary statistics for key variables
