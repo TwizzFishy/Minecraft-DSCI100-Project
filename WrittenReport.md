@@ -68,6 +68,13 @@ Scatter plots were used to visualize the relationship between age, play hours, a
 
 **Figure 1.** Subscription Status by Age and Play Hours  
 ![Alt text](played_hours_vs_age.svg)
+```r
+noob_plot <- noob_player |> 
+  ggplot(aes(x = Age, y = played_hours, color = subscribe)) +
+  geom_point(alpha = 0.5) +
+  labs(title = "New Player: Subscription Status by Age and Play Hours", color = "Subscribed") +
+  theme_minimal()
+```
 
  **Figure 2.** Optimal K for both New Players and Pro Players
 ![Alt text](choose_k_img.svg)
@@ -102,9 +109,7 @@ I used a k-Nearest Neighbors (k-NN) classification model with stratified splits:
 #### Tuning `k`
 
 I used 5-fold cross-validation to select the optimal `k`:
-
-**Figure 3.** Accuracy vs. k for Pro Players  
-**Figure 4.** Accuracy vs. k for New Players  
+ 
 
 Optimal values:
 - Pro Players: `k = 4`
@@ -125,7 +130,7 @@ Optimal values:
 
 ## Discussion
 
-Our results show that play behavior and demographics can **very accurately** predict newsletter subscription, especially among new players. This does not align with the hypothesis that more engaged users (measured via play time and experience) are more likely to opt into community engagement.
+I results show that play behavior and demographics can **very accurately** predict newsletter subscription, especially among new players. This does not align with the hypothesis that more engaged users (measured via play time and experience) are more likely to opt into community engagement.
 
 ### Unexpected Findings
 - The model was highly accurate
