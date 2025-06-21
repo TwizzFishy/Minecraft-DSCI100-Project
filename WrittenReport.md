@@ -69,7 +69,8 @@ Scatter plots were used to visualize the relationship between age, play hours, a
 **Figure 1.** Subscription Status by Age and Play Hours  
 ![Alt text](played_hours_vs_age.svg)
 
- **Figure 2.** Ideal 
+ **Figure 2.** Optimal K for both New Players and Pro Players
+![Alt text](choose_k_img.svg)
 
 
 ```r
