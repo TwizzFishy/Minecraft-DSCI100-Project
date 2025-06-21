@@ -6,7 +6,7 @@ The goal of this project is to analyze the relationship between player character
 
 ## Question
 
-**How does player experience, hours logged on the game, and age predict the liklihood of being subscribed to the newsletter**
+**Can age, hours played, and play experience predict whether a Minecraft player subscribes to the official newsletter?**
 
 This question is motivated by the need to identify which types of players are most engaged with the server and community, as indicated by their choice to opt into further communication via the newsletter. The response variable of interest is `newsletter subscription status` (yes or no), and the explanatory variables are:
 - `hours logged` (total time spent playing)
