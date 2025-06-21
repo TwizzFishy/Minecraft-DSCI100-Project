@@ -76,13 +76,6 @@ noob_plot <- noob_player |>
   theme_minimal()
 ```
 
- **Figure 2.** Optimal K for both New Players and Pro Players
-![Alt text](choose_k_img.svg)
-
-
-```r
-ggplot(...geom_point(alpha = 0.5)...)
-```
 
 **Insights**:
 - For both groups, players with higher play hours appeared more likely to subscribe.
@@ -107,6 +100,17 @@ I used a k-Nearest Neighbors (k-NN) classification model with stratified splits:
 - Does not perform well with irrelevant features or imbalanced classes
 
 #### Tuning `k`
+
+ **Figure 2.** Optimal K for both New Players and Pro Players
+![Alt text](choose_k_img.svg)
+
+
+```r
+pro_plot <- pro_res |> ggplot(aes(x = neighbors, y = mean)) +
+                        geom_point() +
+                        geom_line() +
+                        ggtitle("Pro Player: accuracy vs k")
+```
 
 I used 5-fold cross-validation to select the optimal `k`:
  
